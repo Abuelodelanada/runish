@@ -10,15 +10,21 @@ def main():
 @click.command()
 @click.argument("character")
 def name(character):
-    print(f"You want the name of: {character}")
-    print(unicodedata.name(character))
+    print(name_character(character))
 
 
 @click.command()
 @click.argument("charname")
 def find(charname):
-    print(f"You want to find: {charname}")
-    print(unicodedata.lookup(charname))
+    print(find_charname(charname))
+
+
+def find_charname(charname):
+    return unicodedata.lookup(charname)
+
+
+def name_character(character):
+    return unicodedata.name(character)
 
 
 main.add_command(name)
