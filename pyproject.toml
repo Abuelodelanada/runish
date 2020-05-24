@@ -4,13 +4,18 @@ version = "0.1.0"
 description = "A Unicode name finder and characters explainer"
 authors = ["Facundo Batista <facundo@taniquetil.com.ar>", "Jose C. Massón <jose.masson@gmail.com>"]
 readme = "README.rst"
+packages = [{ include = "runish" }]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+click = "^7.1.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"
 ipython = "^7.13.0"
+
+[tool.poetry.scripts]
+runish = 'runish:main'
 
 [build-system]
 requires = ["poetry>=0.12"]
