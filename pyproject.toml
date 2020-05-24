@@ -3,7 +3,7 @@ name = "runish"
 version = "0.1.0"
 description = "A Unicode name finder and characters explainer"
 authors = ["Facundo Batista <facundo@taniquetil.com.ar>", "Jose C. Massón <jose.masson@gmail.com>"]
-readme = "README.md"
+readme = "README.rst"
 
 [tool.poetry.dependencies]
 python = "^3.8"
